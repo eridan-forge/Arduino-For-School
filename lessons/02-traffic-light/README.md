@@ -135,7 +135,7 @@ delay(500);   // 500 миллисекунд = 0.5 секунды
   
 - [Светофор с LCD дисплеем код](level3_project/with_lcd_countdown.ino)
   
-[Готовый пример в симуляторе wowki]()
+[Готовый пример в симуляторе wowki](https://wokwi.com/projects/454059741431312385)
 
 [Готовый пример в симуляторе wowki](https://wokwi.com/projects/454055425971417089)
 
