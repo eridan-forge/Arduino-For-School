@@ -41,6 +41,7 @@ text
 
 ## 💻 Основные команды
 
+```cpp
 digitalWrite(Trig, LOW);
 delayMicroseconds(2);         // пауза для стабильности
 digitalWrite(Trig, HIGH);
@@ -49,8 +50,6 @@ digitalWrite(Trig, LOW);
 
 long duration = pulseIn(Echo, HIGH);   // ждём сигнал, считаем время
 float distance = duration * 0.034 / 2; // переводим в сантиметры
-
-
 Что такое pulseIn?
 pulseIn(пин, HIGH) ждёт, когда на пине появится высокий сигнал, и считает, сколько микросекунд он держится.
 Это и есть время полёта звука.
@@ -86,8 +85,7 @@ Trig и Echo — не перепутать.
 
 15–30 мин | Пишем код
 Полный код
-
-
+cpp
 #define TRIG 9
 #define ECHO 10
 
@@ -119,9 +117,6 @@ void loop() {
 
   delay(500);
 }
-
-
-
 Загрузка и проверка
 Выбери плату Arduino Nano и правильный порт.
 
@@ -144,7 +139,7 @@ void loop() {
 📌 Подсказка для «смелого» задания
 Внутри loop() после вычисления distance добавь:
 
-
+cpp
 if (distance < 20) {
   digitalWrite(13, HIGH);
 } else {
@@ -152,7 +147,7 @@ if (distance < 20) {
 }
 Не забудь в setup() добавить:
 
-
+cpp
 pinMode(13, OUTPUT);
 35–40 мин | Итог
 Кто смог поймать руку на расстоянии 10 см?
